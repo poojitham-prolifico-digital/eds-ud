@@ -15,15 +15,7 @@
       "hero",
       "cards",
       "columns",
-      "fragment",
-      "teaser"
-  
-    ]
-  },
-  {
-    "id": "accordion",
-    "components": [
-      "accordion-item"
+      "fragment"
     ]
   },
   {
@@ -45,6 +37,12 @@
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "eyebrow",
+    "components": [
+      "eyebrow-item"
     ]
   }
 ]
