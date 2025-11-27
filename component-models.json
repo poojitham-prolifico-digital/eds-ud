@@ -142,23 +142,6 @@
     ]
   },
   {
-    "id": "accordion-item",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "title",
-        "label": "Title"
-      },
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "content",
-        "label": "Content"
-      }
-    ]
-  },
-  {
     "id": "card",
     "fields": [
       {
@@ -193,6 +176,21 @@
         "name": "rows",
         "value": "",
         "label": "Rows"
+      }
+    ]
+  },
+  {
+    "id": "eyebrow-item",
+    "fields": [
+      {
+        "component": "text",
+        "name": "label",
+        "label": "Label"
+      },
+      {
+        "component": "aem-content",
+        "name": "url",
+        "label": "Link URL"
       }
     ]
   },
