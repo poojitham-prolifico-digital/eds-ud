@@ -15,10 +15,7 @@
       "hero",
       "cards",
       "columns",
-      "fragment",
-      "eyebrow",
-      "mainarea",
-      "megamenu"
+      "fragment"
     ]
   },
   {
@@ -52,12 +49,6 @@
     "id": "mainarea",
     "components": [
       "mainarea"
-    ]
-  },
-  {
-    "id": "megamenu",
-    "components": [
-      "megamenu-item"
     ]
   }
 ]
