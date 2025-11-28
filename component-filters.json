@@ -15,8 +15,7 @@
       "hero",
       "cards",
       "columns",
-      "fragment",
-      "eyebrow"
+      "fragment"
     ]
   },
   {
@@ -44,6 +43,18 @@
     "id": "eyebrow",
     "components": [
       "eyebrow-item"
+    ]
+  },
+  {
+    "id": "mainarea",
+    "components": [
+      "mainarea"
+    ]
+  },
+  {
+    "id": "megamenu",
+    "components": [
+      "megamenu-item"
     ]
   }
 ]

@@ -1,0 +1,59 @@
+/* Eyebrow wrapper background (matches bakerbrothersplumbing) */
+/* Force eyebrow to escape nav width restriction */
+.nav-wrapper .eyebrow-container {
+  width: 100vw !important;    /* FULL viewport width */
+  margin-left: calc(50% - 52vw) !important; /* Pull left */
+}
+
+
+.eyebrow-container,
+.eyebrow-wrapper {
+    background: linear-gradient(to right,#ebeeef 0,#fff 50%,#ebeeef 100%); 
+    border-bottom: 1px solid #fff; 
+    width: inherit;
+    height: 40px;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+}
+
+/* Eyebrow block container */
+.eyebrow.block {
+  display: inline-flex;
+  /* gap: 6px; */
+  align-items: center;
+  justify-content: center;
+}
+
+
+.eyebrow.block > div {
+  display: inline-block;
+  position: relative;
+}
+
+/* Add "::" separator after every item EXCEPT last */
+.eyebrow.block > div:not(:last-child)::after {
+  content: " :: ";
+  color: #999;
+  margin-left:8px;
+  margin-right: 8px;
+  font-weight: normal;
+}
+
+.eyebrow.block a {
+  color: #028;         
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+
+/* Hover behavior */
+.eyebrow.block a:hover {
+  text-decoration: none;
+  color: rgb(52, 82, 174);
+}

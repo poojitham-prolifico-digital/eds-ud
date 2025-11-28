@@ -231,6 +231,73 @@
     ]
   },
   {
+    "id": "mainarea",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "mainImage",
+        "label": "Main Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "headline",
+        "label": "Headline Text",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "subline",
+        "label": "Subline Text",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "ctaLink",
+        "label": "CTA Link URL"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "ctaLabel",
+        "label": "CTA Button Label"
+      }
+    ]
+  },
+  {
+    "id": "megamenu",
+    "fields": [
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Main Category Title",
+        "valueType": "string",
+        "required": true
+      }
+    ]
+  },
+  {
+    "id": "megamenu-item",
+    "fields": [
+      {
+        "component": "text",
+        "name": "label",
+        "label": "Sub Item Label",
+        "valueType": "string",
+        "required": true
+      },
+      {
+        "component": "aem-content",
+        "name": "link",
+        "label": "Sub Item Link",
+        "valueType": "string",
+        "required": false
+      }
+    ]
+  },
+  {
     "id": "teaser",
     "fields": [
       {
