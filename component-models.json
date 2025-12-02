@@ -231,6 +231,78 @@
     ]
   },
   {
+    "id": "herobanner",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "backgroundMedia",
+        "label": "Background Image / Video",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "name": "mobileImage",
+        "label": "Mobile Image",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "altText",
+        "label": "Background Image Alt Text",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "eyebrow",
+        "label": "Eyebrow",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "title",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "label": "Description",
+        "valueType": "string"
+      },
+      {
+        "component": "text-multi",
+        "name": "ctaLabels",
+        "label": "CTA Labels",
+        "multi": true,
+        "maxItems": 2
+      },
+      {
+        "component": "enum-multi",
+        "name": "ctaTypes",
+        "label": "CTA Types",
+        "multi": true,
+        "options": [
+          {
+            "label": "Primary",
+            "value": "primary"
+          },
+          {
+            "label": "Secondary",
+            "value": "secondary"
+          }
+        ],
+        "maxItems": 2
+      },
+      {
+        "component": "aem-content-multi",
+        "name": "ctaLinks",
+        "label": "CTA Links",
+        "multi": true,
+        "maxItems": 2
+      }
+    ]
+  },
+  {
     "id": "teaser",
     "fields": [
       {
