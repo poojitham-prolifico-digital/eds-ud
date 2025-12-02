@@ -231,6 +231,74 @@
     ]
   },
   {
+    "id": "herobannerv3",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "backgroundMedia",
+        "label": "Background Image / Video",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "name": "mobileImage",
+        "label": "Mobile Image",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "altText",
+        "label": "Background Image Alt Text"
+      },
+      {
+        "component": "text",
+        "name": "eyebrow",
+        "label": "Eyebrow"
+      },
+      {
+        "component": "richtext",
+        "name": "title",
+        "label": "Title"
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "label": "Description"
+      },
+      {
+        "component": "text-multi",
+        "name": "ctaLabels",
+        "label": "CTA Labels",
+        "multi": true,
+        "maxItems": 2
+      },
+      {
+        "component": "enum-multi",
+        "name": "ctaTypes",
+        "label": "CTA Type",
+        "multi": true,
+        "options": [
+          {
+            "label": "Schedule Engine",
+            "value": "schedule-engine"
+          },
+          {
+            "label": "Link",
+            "value": "link"
+          }
+        ],
+        "maxItems": 2
+      },
+      {
+        "component": "aem-content-multi",
+        "name": "ctaLinks",
+        "label": "CTA Links",
+        "multi": true,
+        "maxItems": 2
+      }
+    ]
+  },
+  {
     "id": "mainarea",
     "fields": [
       {
