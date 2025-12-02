@@ -1,15 +1,8 @@
-
-:root {
-  --card-left: 70px;
-  --card-top: 100px;
-  --card-width: 400px;     
-  --card-padding: 40px;     
-  --card-radius: 20px;
-  --card-shadow: 0 10px 40px rgba(0,0,0,0.18);
-}
-
 /* Outer wrapper */
-.herobanner-wrapper { width:100%; position:relative; }
+.herobanner-wrapper { 
+  width:100%; 
+  position:relative; 
+}
 
 /* Main block container */
 .herobanner.block {
@@ -26,6 +19,7 @@
   inset: 0;               
   z-index: 1;
 }
+
 .herobanner.block > div:first-child picture,
 .herobanner.block > div:first-child img {
   width: 100%;
@@ -39,28 +33,27 @@
    ----------------------- */
 .herobanner.block > div:nth-child(2) {
   position: absolute;
-  left: var(--card-left);
-  top: var(--card-top);
-  width: var(--card-width);
+  left: 70px;
+  top: 100px;
+  width: 400px;
   background: #fff;
-  padding: var(--card-padding);
-  border-radius: var(--card-radius);
-  box-shadow: var(--card-shadow);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.18);
   z-index: 6;
   box-sizing: border-box;
   height: 200px;
 }
 
-
-/* common styling  that contains text/p */
+/* common styling for the text/p containers */
 .herobanner.block > div:nth-child(3) > div,
 .herobanner.block > div:nth-child(4) > div,
 .herobanner.block > div:nth-child(5) > div,
 .herobanner.block > div:nth-child(6) > div,
 .herobanner.block > div:nth-child(7) > div {
   position: absolute;
-  left: calc(var(--card-left) + var(--card-padding)); 
-  width: calc(var(--card-width) - (var(--card-padding) * 2));
+  left: calc(70px + 40px);     
+  width: calc(400px - 80px);   
   z-index: 7;
   box-sizing: border-box;
   pointer-events: auto;
@@ -68,45 +61,47 @@
 
 /* eyebrow */
 .herobanner.block > div:nth-child(4) > div { 
-  top: calc(var(--card-top) + 20px);
+  top: calc(100px + 20px);
   color: #666;
   font-size: 15px;
   margin-bottom: 8px;
 }
- /* title */
+
+/* title */
 .herobanner.block > div:nth-child(5) > div {
-  top: calc(var(--card-top) + 50px);
+  top: calc(100px + 50px);
   font-size: 18px;
   line-height: 1.05;
   font-weight: 400;
-  color: #032d78; 
+  color: #032d78;
 }
+
 /* description */
 .herobanner.block > div:nth-child(6) > div {
-  top: calc(var(--card-top) + 90px);
+  top: calc(100px + 90px);
   font-size: 18px;
   color: #333;
+  line-height: 1.01;
 }
+
 /* CTA wrapper */
 .herobanner.block > div:nth-child(7) > div { 
-  top: calc(var(--card-top) + 110px);
+  top: calc(100px + 110px);
   display: block;
 }
 
-/* style CTA link  */
+/* CTA button */
 .herobanner.block > div:nth-child(7) a,
 .herobanner.block > div:nth-child(7) .button {
   display: inline-block;
   background: #e60a55;
   color: #fff;
-  /* padding: 8px 20px; */
   border-radius: 8px;
   font-weight: 700;
   box-shadow: 0 4px 10px rgba(0,0,0,0.12);
- 
 }
 
-
+/* Remove spacing inside p tags */
 .herobanner.block > div:nth-child(3) > div p,
 .herobanner.block > div:nth-child(4) > div p,
 .herobanner.block > div:nth-child(5) > div p,
@@ -116,4 +111,7 @@
 }
 
 /* HIDE ALT TEXT IF IMAGE PRESENT */
-.herobanner.block:has(>div:first-child img[src]):not(:has(>div:first-child img[src=""])) > div:nth-child(3) { display: none; }
+.herobanner.block:has(>div:first-child img[src]):not(:has(>div:first-child img[src=""])) 
+  > div:nth-child(3) { 
+  display: none; 
+}
