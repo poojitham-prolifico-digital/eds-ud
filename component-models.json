@@ -231,7 +231,7 @@
     ]
   },
   {
-    "id": "herobanner",
+    "id": "herobanner-item",
     "fields": [
       {
         "component": "aem-content",
