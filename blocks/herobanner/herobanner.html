@@ -1,24 +1,37 @@
-<div data-aue-resource="herobanner">
-
-  <!-- IMAGE SECTION -->
-  <section>
+<div class="herobanner" data-aue-resource="herobanner">
+  <!-- Background area -->
+  <div class="herobanner__bg">
+    <!-- AEM/EDS will populate the image reference -->
     <a data-aue-prop="backgroundMedia"></a>
-    <a data-aue-prop="mobileImage"></a>
-    <span data-aue-prop="altText"></span>
-  </section>
+  </div>
 
-  <!-- CONTENT SECTION -->
-  <section>
-    <span data-aue-prop="eyebrow"></span>
-    <h2 data-aue-prop="title"></h2>
-    <p data-aue-prop="description"></p>
+  <!-- content overlay (white card) -->
+  <div class="herobanner__overlay">
+    <div class="herobanner__content">
 
-    <!-- CTA -->
-    <div>
-      <a data-aue-prop="ctaLinks">
-        <span data-aue-prop="ctaLabels"></span>
-      </a>
+      <!-- optional small icon (if provided) -->
+      <div class="herobanner__icon" data-aue-prop="imageIconPath"></div>
+
+      <div class="herobanner__eyebrow" data-aue-prop="eyebrow"></div>
+
+      <h2 class="herobanner__title" data-aue-prop="title"></h2>
+
+      <p class="herobanner__desc" data-aue-prop="description"></p>
+
+      <!-- CTA list (dynamic) — model is id "cta" -->
+      <div class="herobanner__ctas" data-aue-collection="cta">
+        <a class="herobanner__cta" data-aue-prop="link" title="">
+          <span data-aue-prop="label"></span>
+        </a>
+      </div>
+
+      <!-- hidden meta props for JS to read alignment/size -->
+      <span class="herobanner__meta--alignment" data-aue-prop="alignment" style="display:none"></span>
+      <span class="herobanner__meta--size" data-aue-prop="size" style="display:none"></span>
+      <span class="herobanner__meta--bgcolor" data-aue-prop="backgroundColor" style="display:none"></span>
+
+      <!-- alt text (should only show if no image) -->
+      <div class="herobanner__alt" data-aue-prop="altText"></div>
     </div>
-  </section>
-
+  </div>
 </div>

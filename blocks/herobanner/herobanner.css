@@ -1,117 +1,112 @@
-/* Outer wrapper */
-.herobanner-wrapper { 
-  width:100%; 
-  position:relative; 
-}
+/* Reset-ish for the block */
+.herobanner { position: relative; width: 100%; overflow: hidden; }
 
-/* Main block container */
-.herobanner.block {
-  position: relative;
-  width: 100%;
-  min-height: 420px; 
-  overflow: hidden;
-  display:block;
-}
-
-/* BACKGROUND (first child) */
-.herobanner.block > div:first-child {
+/* BACKGROUND: absolute full cover */
+.herobanner__bg {
   position: absolute;
-  inset: 0;               
+  inset: 0;
   z-index: 1;
 }
-
-.herobanner.block > div:first-child picture,
-.herobanner.block > div:first-child img {
+.herobanner__bg picture,
+.herobanner__bg img,
+.herobanner__bg a {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display:block;
 }
 
-/* -----------------------
-   WHITE CARD (2nd div)
-   ----------------------- */
-.herobanner.block > div:nth-child(2) {
-  position: absolute;
-  left: 70px;
-  top: 100px;
-  width: 400px;
+/* OVERLAY that holds content card */
+.herobanner__overlay {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  min-height: 300px; /* base height */
+  display: flex;
+  align-items: center;
+}
+
+/* CONTENT card container (this is the white card) */
+.herobanner__content {
+  position: relative;
+  left: 70px;                 /* default horizontal offset */
+  max-width: 520px;
   background: #fff;
-  padding: 40px;
+  padding: 32px 36px;
   border-radius: 20px;
   box-shadow: 0 10px 40px rgba(0,0,0,0.18);
-  z-index: 6;
   box-sizing: border-box;
-  height: 200px;
-}
-
-/* common styling for the text/p containers */
-.herobanner.block > div:nth-child(3) > div,
-.herobanner.block > div:nth-child(4) > div,
-.herobanner.block > div:nth-child(5) > div,
-.herobanner.block > div:nth-child(6) > div,
-.herobanner.block > div:nth-child(7) > div {
-  position: absolute;
-  left: calc(70px + 40px);     
-  width: calc(400px - 80px);   
-  z-index: 7;
-  box-sizing: border-box;
-  pointer-events: auto;
-}
-
-/* eyebrow */
-.herobanner.block > div:nth-child(4) > div { 
-  top: calc(100px + 20px);
-  color: #666;
-  font-size: 15px;
-  margin-bottom: 8px;
-}
-
-/* title */
-.herobanner.block > div:nth-child(5) > div {
-  top: calc(100px + 50px);
-  font-size: 18px;
-  line-height: 1.05;
-  font-weight: 400;
-  color: #032d78;
-}
-
-/* description */
-.herobanner.block > div:nth-child(6) > div {
-  top: calc(100px + 90px);
-  font-size: 18px;
-  color: #333;
-  line-height: 1.01;
-}
-
-/* CTA wrapper */
-.herobanner.block > div:nth-child(7) > div { 
-  top: calc(100px + 110px);
+  z-index: 3;
+  /* allow the card to grow with content */
   display: block;
 }
 
-/* CTA button */
-.herobanner.block > div:nth-child(7) a,
-.herobanner.block > div:nth-child(7) .button {
+/* Icon block (if provided) */
+.herobanner__icon img,
+.herobanner__icon a {
+  display: inline-block;
+  max-width: 64px;
+  max-height: 64px;
+  margin-bottom: 8px;
+}
+
+/* Eyebrow / small text */
+.herobanner__eyebrow {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* Title */
+.herobanner__title {
+  color: #032d78;
+  font-size: 32px;
+  line-height: 1.1;
+  margin: 0 0 14px 0;
+}
+
+/* Description */
+.herobanner__desc {
+  color: #333;
+  font-size: 18px;
+  margin: 0 0 18px 0;
+  line-height: 1.35;
+}
+
+/* CTA list and buttons */
+.herobanner__ctas {
+  margin-top: 8px;
+}
+.herobanner__cta {
   display: inline-block;
   background: #e60a55;
-  color: #fff;
+  color: #fff !important;
+  padding: 12px 22px;
   border-radius: 8px;
   font-weight: 700;
+  text-decoration: none;
+  text-transform: none;
   box-shadow: 0 4px 10px rgba(0,0,0,0.12);
 }
 
-/* Remove spacing inside p tags */
-.herobanner.block > div:nth-child(3) > div p,
-.herobanner.block > div:nth-child(4) > div p,
-.herobanner.block > div:nth-child(5) > div p,
-.herobanner.block > div:nth-child(6) > div p {
-  margin: 0;
-  padding: 0;
-}
+/* If multiple CTAs, give slight gap */
+.herobanner__ctas > * + * { margin-left: 12px; }
 
-/* HIDE ALT TEXT IF IMAGE PRESENT */
-.herobanner.block:has(>div:first-child img[src]):not(:has(>div:first-child img[src=""])) 
-  > div:nth-child(3) { 
-  display: none; 
-}
+/* ALT text visible if no background image */
+.herobanner__alt { color:#444; font-size:14px; margin-bottom:8px; }
+
+/* ===========================
+   Alignment variants (applied by JS)
+   =========================== */
+.herobanner.align-left .herobanner__content  { left: 70px; margin-left: 0; text-align: left; }
+.herobanner.align-center .herobanner__content { margin: 0 auto; left: 0; text-align: center; }
+.herobanner.align-right .herobanner__content { margin-left: auto; margin-right: 70px; left: 0; text-align: right; }
+
+/* ===========================
+   Size variants
+   =========================== */
+.herobanner.size-short .herobanner__overlay { min-height: 320px; }
+.herobanner.size-medium .herobanner__overlay { min-height: 420px; }
+.herobanner.size-tall .herobanner__overlay { min-height: 600px; }
+
+

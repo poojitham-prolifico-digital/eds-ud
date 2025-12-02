@@ -236,7 +236,7 @@
       {
         "component": "aem-content",
         "name": "backgroundMedia",
-        "label": "Background Image / Video",
+        "label": "Background Image",
         "valueType": "string"
       },
       {
@@ -248,38 +248,104 @@
       {
         "component": "text",
         "name": "altText",
-        "label": "Background Image Alt Text",
-        "valueType": "string"
+        "label": "Background Image Alt Text"
       },
       {
         "component": "text",
         "name": "eyebrow",
-        "label": "Eyebrow",
-        "valueType": "string"
+        "label": "Eyebrow"
       },
       {
         "component": "richtext",
         "name": "title",
-        "label": "Title",
-        "valueType": "string"
+        "label": "Title"
       },
       {
         "component": "richtext",
         "name": "description",
-        "label": "Description",
-        "valueType": "string"
+        "label": "Description"
       },
       {
         "component": "aem-content",
-        "name": "textContent_cta",
-        "label": "CTA",
+        "name": "imageIconPath",
+        "label": "Icon Image (optional)",
         "valueType": "string"
       },
       {
         "component": "text",
-        "name": "textContent_ctaText",
-        "label": "CTA label",
-        "valueType": "string"
+        "name": "backgroundColor",
+        "label": "Background Color (hex)"
+      },
+      {
+        "component": "enum",
+        "name": "alignment",
+        "label": "Content alignment",
+        "options": [
+          {
+            "label": "Left",
+            "value": "left"
+          },
+          {
+            "label": "Center",
+            "value": "center"
+          },
+          {
+            "label": "Right",
+            "value": "right"
+          }
+        ],
+        "value": "left"
+      },
+      {
+        "component": "enum",
+        "name": "size",
+        "label": "Size variant",
+        "options": [
+          {
+            "label": "Short",
+            "value": "short"
+          },
+          {
+            "label": "Medium",
+            "value": "medium"
+          },
+          {
+            "label": "Tall",
+            "value": "tall"
+          }
+        ],
+        "value": "medium"
+      }
+    ]
+  },
+  {
+    "id": "cta",
+    "fields": [
+      {
+        "component": "text",
+        "name": "label",
+        "label": "CTA label"
+      },
+      {
+        "component": "aem-content",
+        "name": "link",
+        "label": "CTA Link"
+      },
+      {
+        "component": "select",
+        "name": "type",
+        "label": "CTA type",
+        "options": [
+          {
+            "label": "Primary",
+            "value": "primary"
+          },
+          {
+            "label": "Secondary",
+            "value": "secondary"
+          }
+        ],
+        "value": "primary"
       }
     ]
   },
