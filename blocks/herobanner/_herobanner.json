@@ -58,31 +58,19 @@
           "label": "Description",
           "valueType": "string"
         },
-        {
-          "component": "text-multi",
-          "name": "ctaLabels",
-          "label": "CTA Labels",
-          "multi": true,
-          "maxItems": 2
-        },
-        {
-          "component": "enum-multi",
-          "name": "ctaTypes",
-          "label": "CTA Types",
-          "multi": true,
-          "options": [
-            { "label": "Primary", "value": "primary" },
-            { "label": "Secondary", "value": "secondary" }
-          ],
-          "maxItems": 2
-        },
-        {
-          "component": "aem-content-multi",
-          "name": "ctaLinks",
-          "label": "CTA Links",
-          "multi": true,
-          "maxItems": 2
-        }
+      {
+        "component": "aem-content",
+        "name": "textContent_cta",
+        "label": "CTA",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "textContent_ctaText",
+        "label": "CTA label",
+        "valueType": "string"
+      }
+
       ]
     }
   ],
