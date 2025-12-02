@@ -95,9 +95,5 @@
   ],
 
   "filters": [
-    {
-      "id": "herobanner",
-      "components": ["herobanner"]
-    }
   ]
 }
