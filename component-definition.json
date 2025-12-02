@@ -226,7 +226,7 @@
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
                   "name": "HeroBannerv3 Item",
-                  "model": "herobannev3-item"
+                  "model": "herobannerv3-item"
                 }
               }
             }
