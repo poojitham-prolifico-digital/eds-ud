@@ -81,6 +81,11 @@
       ]
     }
   ],
+"filters": [
+  {
+    "id": "section",
+    "components": ["herobannerv3"]
+  }
+]
 
-  "filters": []
 }

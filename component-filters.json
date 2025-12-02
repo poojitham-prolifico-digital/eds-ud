@@ -15,8 +15,7 @@
       "hero",
       "cards",
       "columns",
-      "fragment",
-      "herobannerv3"
+      "fragment"
     ]
   },
   {
@@ -38,6 +37,12 @@
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "section",
+    "components": [
+      "herobannerv3"
     ]
   },
   {
