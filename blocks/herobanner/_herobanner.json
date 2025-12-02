@@ -24,27 +24,17 @@
         {
           "component": "aem-content",
           "name": "backgroundMedia",
-          "label": "Background Image",
+          "label": "Background Image / Video",
           "valueType": "string"
         },
         {
           "component": "aem-content",
-          "name": "mobileImage",
-          "label": "Mobile Image",
+          "name": "iconImage",
+          "label": "Icon Image (optional)",
           "valueType": "string"
         },
         {
           "component": "text",
-          "name": "altText",
-          "label": "Background Image Alt Text"
-        },
-        {
-          "component": "text",
-          "name": "eyebrow",
-          "label": "Eyebrow"
-        },
-        {
-          "component": "richtext",
           "name": "title",
           "label": "Title"
         },
@@ -54,74 +44,20 @@
           "label": "Description"
         },
         {
-          "component": "aem-content",
-          "name": "imageIconPath",
-          "label": "Icon Image (optional)",
-          "valueType": "string"
+          "component": "text-multi",
+          "name": "ctaLabel",
+          "label": "CTA Label",
+          "multi": true
         },
         {
-          "component": "text",
-          "name": "backgroundColor",
-          "label": "Background Color (hex)"
-        },
-        {
-          "component": "enum",
-          "name": "alignment",
-          "label": "Content alignment",
-          "options": [
-            { "label": "Left", "value": "left" },
-            { "label": "Center", "value": "center" },
-            { "label": "Right", "value": "right" }
-          ],
-          "value": "left"
-        },
-        {
-          "component": "enum",
-          "name": "size",
-          "label": "Size variant",
-          "options": [
-            { "label": "Short", "value": "short" },
-            { "label": "Medium", "value": "medium" },
-            { "label": "Tall", "value": "tall" }
-          ],
-          "value": "medium"
-        }
-      ]
-    },
-
-    {
-      "id": "cta",
-      "fields": [
-        {
-          "component": "text",
-          "name": "label",
-          "label": "CTA label"
-        },
-        {
-          "component": "aem-content",
-          "name": "link",
-          "label": "CTA Link"
-        },
-        {
-          "component": "select",
-          "name": "type",
-          "label": "CTA type",
-          "options": [
-            { "label": "Primary", "value": "primary" },
-            { "label": "Secondary", "value": "secondary" }
-          ],
-          "value": "primary"
+          "component": "aem-content-multi",
+          "name": "ctaLink",
+          "label": "CTA Link",
+          "multi": true
         }
       ]
     }
   ],
 
-  "filters": [
-    {
-      "id": "herobanner",
-      "components": [
-        "herobanner"
-      ]
-    }
-  ]
+  "filters": []
 }

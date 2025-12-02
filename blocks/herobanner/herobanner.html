@@ -1,37 +1,64 @@
-<div class="herobanner" data-aue-resource="herobanner">
-  <!-- Background area -->
-  <div class="herobanner__bg">
-    <!-- AEM/EDS will populate the image reference -->
-    <a data-aue-prop="backgroundMedia"></a>
+<div class="hero-banner__main ${heroBanner.classes}"
+     style="${heroBanner.backgroundColor @ context='styleString'}"
+     data-aue-resource="herobanner">
+
+  <div class="hero-banner__img-container">
+    <div class="image aem-GridColumn aemGridColumn--default-12">
+      <div class="cmp-image">
+        <picture data-aue-prop="backgroundMedia">
+          <img data-aue-prop="backgroundMedia"
+               src="${heroBanner.fileReference}"
+               alt="${heroBanner.alt || true}">
+        </picture>
+      </div>
+    </div>
   </div>
 
-  <!-- content overlay (white card) -->
-  <div class="herobanner__overlay">
-    <div class="herobanner__content">
+  <div class="container-fluid wrapper hero-banner__content-container">
+    <div class="wrapper__inner">
 
-      <!-- optional small icon (if provided) -->
-      <div class="herobanner__icon" data-aue-prop="imageIconPath"></div>
+      <div class="hero-banner__content" id="${component.id}">
 
-      <div class="herobanner__eyebrow" data-aue-prop="eyebrow"></div>
+        <div class="banner-content ${hasImage}">
 
-      <h2 class="herobanner__title" data-aue-prop="title"></h2>
+          <div class="banner-content__main">
 
-      <p class="herobanner__desc" data-aue-prop="description"></p>
+            <div class="brand-heading"
+                 data-aue-prop="title">
+              ${heroBanner.title @context='html'}
+            </div>
 
-      <!-- CTA list (dynamic) — model is id "cta" -->
-      <div class="herobanner__ctas" data-aue-collection="cta">
-        <a class="herobanner__cta" data-aue-prop="link" title="">
-          <span data-aue-prop="label"></span>
-        </a>
+            <div class="banner-content__desc"
+                 data-aue-prop="description">
+              ${heroBanner.description @context='html'}
+            </div>
+
+            <!-- CTA LIST -->
+            <div class="banner-content__cta"
+                 data-aue-collection="ctas">
+
+              <a class="a-button"
+                 data-aue-prop="ctaLink">
+                 <span data-aue-prop="ctaLabel"></span>
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="banner-content__img">
+            <div class="image aem-GridColumn aemGridColumn--default-12">
+              <div class="cmp-image">
+                <img data-aue-prop="iconImage"
+                     src="${heroBanner.imageIconPath}">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
       </div>
 
-      <!-- hidden meta props for JS to read alignment/size -->
-      <span class="herobanner__meta--alignment" data-aue-prop="alignment" style="display:none"></span>
-      <span class="herobanner__meta--size" data-aue-prop="size" style="display:none"></span>
-      <span class="herobanner__meta--bgcolor" data-aue-prop="backgroundColor" style="display:none"></span>
-
-      <!-- alt text (should only show if no image) -->
-      <div class="herobanner__alt" data-aue-prop="altText"></div>
     </div>
   </div>
 </div>
