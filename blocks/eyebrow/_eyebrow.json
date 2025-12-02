@@ -51,11 +51,6 @@
   ],
 
   "filters": [
-    {
-      "id": "eyebrow",
-      "components": [
-        "eyebrow-item"
-      ]
-    }
+  
   ]
 }
