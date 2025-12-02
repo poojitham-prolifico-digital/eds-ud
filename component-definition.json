@@ -188,51 +188,6 @@
           }
         },
         {
-          "title": "Hero Banner",
-          "id": "herobanner",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "HeroBanner",
-                  "model": "herobanner"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Hero Banner v3",
-          "id": "herobannerv3",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "HeroBannerv3",
-                  "filter": "herobannerv3"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Hero Banner v3-Item",
-          "id": "herobannerv3-item",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block/item",
-                "template": {
-                  "name": "HeroBannerv3 Item",
-                  "model": "herobannerv3-item"
-                }
-              }
-            }
-          }
-        },
-        {
           "title": "Main Area",
           "id": "mainarea",
           "plugins": {
