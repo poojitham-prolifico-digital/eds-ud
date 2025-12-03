@@ -231,6 +231,52 @@
     ]
   },
   {
+    "id": "herobanner",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "backgroundImage",
+        "label": "Background Image / Video",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "title",
+        "label": "Title"
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "label": "Description"
+      },
+      {
+        "component": "container",
+        "name": "buttons",
+        "label": "CTA Buttons",
+        "valueType": "array",
+        "models": [
+          "ctaButton"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ctaButton",
+    "fields": [
+      {
+        "component": "text",
+        "name": "label",
+        "label": "Button Label"
+      },
+      {
+        "component": "aem-content",
+        "name": "link",
+        "label": "Button Link",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "teaser",
     "fields": [
       {
