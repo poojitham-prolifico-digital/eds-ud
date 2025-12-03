@@ -15,10 +15,8 @@
         },
         {
           "...": "./_button.json#/definitions"
-        },
-        {
-          "...": "../blocks/herobanner/_herobanner.json#/definitions"
         }
+
       ]
     },
     {
