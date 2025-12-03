@@ -38,7 +38,7 @@
           "label": "Description"
         },
         {
-          "component": "container",
+          "component": "collection",
           "name": "buttons",
           "label": "CTA Buttons",
           "valueType": "array",
