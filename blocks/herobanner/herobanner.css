@@ -1,0 +1,44 @@
+.hero-banner--default-height .hero-banner__img-container {
+  height: 6rem;
+}
+.hero-banner--large-height .hero-banner__img-container {
+  height: 7.25rem;
+}
+.hero-banner--small-height .hero-banner__img-container {
+  height: 4.75rem;
+}
+
+
+.hero-banner__content-container {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.hero-banner__img-container {
+  height: 100%;
+}
+.hero-banner__img-container .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.hero-banner__img-container .image div {
+  width: 100%;
+  height: 100%;
+}
+.hero-banner__img-container .image .cmp-image__link {
+  height: 100%;
+  display: block;
+}
+.hero-banner__img-container .image .cmp-image img {
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  max-width: 100%;
+}
+.hero-banner .banner-content__cta .a-button:nth-child(2) {
+  margin-top: 0.625rem;
+}
+
