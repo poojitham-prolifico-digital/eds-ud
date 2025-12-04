@@ -167,6 +167,12 @@
   line-height: 1.25;
   color: black;
 }
+.banner-content .brand-heading ::before{
+  background-color: #d86623;
+  height:4px;
+}
+
+/* till here-------- */
 .banner-content .brand-heading a {
   text-decoration: underline;
 }
