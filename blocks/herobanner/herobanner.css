@@ -115,6 +115,7 @@
   line-height: 1.5rem;
 }
 .banner-content .brand-heading::before {
+  background-color: #d86623;  /* updated line */
   margin-top: 0.1875rem;
 }
 .banner-content__desc {
