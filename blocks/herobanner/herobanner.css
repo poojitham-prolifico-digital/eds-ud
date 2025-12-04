@@ -247,5 +247,5 @@
     }
 
 .banner-content .brand-heading::before {
-    background-color: #d86623;
+    background-color: #d86623 !important;
 }
