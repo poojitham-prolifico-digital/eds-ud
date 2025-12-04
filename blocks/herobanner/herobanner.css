@@ -226,3 +226,16 @@
     border-radius: 0.1875rem;
   }
 }
+
+
+.hero-banner__content-container .wrapper__inner{
+          max-width: 90rem;
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+}
+
+.container.responsivegrid.container--default-width .wrapper__inner {
+        max-width: 90rem;
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
