@@ -37,7 +37,7 @@
           "name": "description",
           "label": "Description"
         },
-     {
+        {
                     "component": "aem-content",
                     "name": "textContent_cta",
                     "label": "CTA",
