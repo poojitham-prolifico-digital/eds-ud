@@ -162,9 +162,9 @@
   padding: 1rem 0;
 }
 .banner-content .brand-heading * {
-  font-size: inherit;
-  line-height: inherit;
-  color: inherit;
+  font-size: 30px;
+  line-height: 1.25;
+  color: black;
 }
 .banner-content .brand-heading a {
   text-decoration: underline;
