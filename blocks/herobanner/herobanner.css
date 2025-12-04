@@ -161,6 +161,7 @@
 .banner-content {
   padding: 1rem 0;
 }
+/* updated one */
 .banner-content .brand-heading * {
   font-size: 30px;
   line-height: 1.25;
@@ -172,10 +173,11 @@
 .banner-content__desc {
   margin-top: 1rem;
 }
+/* changed */
 .banner-content__desc * {
-  font-size: inherit;
-  line-height: inherit;
-  color: inherit;
+  font-size: 0.875rem;
+  line-height:1.25rem ;
+  color: #606261;
 }
 .banner-content__desc p {
   margin-bottom: 0;
@@ -228,14 +230,15 @@
 }
 
 
-.hero-banner__content-container .wrapper__inner{
-          max-width: 90rem;
-        padding-left: 3.75rem;
-        padding-right: 3.75rem;
-}
+
+
 
 .container.responsivegrid.container--default-width .wrapper__inner {
         max-width: 90rem;
         padding-left: 3.75rem;
         padding-right: 3.75rem;
     }
+
+.banner-content .brand-heading::before {
+    background-color: #d86623;
+}
