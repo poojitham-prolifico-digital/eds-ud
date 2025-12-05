@@ -1,15 +1,17 @@
-
 export default function decorate(block) {
   const backgroundEl = block.querySelector('[data-aue-prop="backgroundImage"]');
   const titleEl = block.querySelector('[data-aue-prop="title"]');
   const descEl = block.querySelector('[data-aue-prop="description"]');
-  const ctaEl = block.querySelector('[data-aue-prop="textContent_cta"]');
-  const ctaTextEl = block.querySelector('[data-aue-prop="textContent_ctaText"]');
+  const ctaLabelEl = block.querySelector('[data-aue-prop="ctaLabel"]');
+  const ctaLinkEl = block.querySelector('[data-aue-prop="ctaLink"]');
+
   const background = backgroundEl?.src || backgroundEl?.getAttribute('data-src') || '';
   const title = titleEl?.innerHTML || '';
   const description = descEl?.innerHTML || '';
-  const ctaLink = ctaEl?.getAttribute('href') || '';
-  const ctaLabel = ctaTextEl?.innerText?.trim() || '';
+
+  const ctaLabel = ctaLabelEl?.innerText?.trim() || '';
+  const ctaLink = ctaLinkEl?.innerText?.trim() || '';
+
   const html = `
 <div class="container responsivegrid hero-banner container--default-width hero-banner--large-height hero-banner--content-left aem-GridColumn aem-GridColumn--default--12">
   <div class="hero-banner__main">
@@ -27,35 +29,40 @@ export default function decorate(block) {
         </div>
       </div>
     </div>
+
     <div class="container-fluid wrapper hero-banner__content-container">
       <div class="wrapper__inner">
         <div class="hero-banner__content" id="herobanner-796b3dfa4b">
           <div class="banner-content banner-content--no-img">
             <div class="banner-content__main">
-              <div class="brand-heading" data-aue-prop="title" data-aue-type="richtext">
-                ${title}
-              </div>
-              <div class="banner-content__desc" data-aue-prop="description" data-aue-type="richtext">
-                ${description}
-              </div>
+
+              <div class="brand-heading" data-aue-prop="title" data-aue-type="richtext">${title}</div>
+
+              <div class="banner-content__desc" data-aue-prop="description" data-aue-type="richtext">${description}</div>
+
               <div class="banner-content__cta">
                 <div class="cta button a-button a-button--primary a-button--md a-link a-link--icon a-button--icon-left">
-                  <!-- CTA Template kept intact for CSS -->
-                  <a data-aue-prop="textContent_cta" data-aue-type="aem-content" href="${ctaLink}">
                     <div>
-                      <button tabindex="0" class="btn schedule-engine-integration-cta" aria-label="${ctaLabel || 'CTA'}" id="button-bea9cd5877">
+                      <button tabindex="0"
+                        class="btn schedule-engine-integration-cta"
+                        aria-label="${ctaLabel}"
+                        data-aue-prop="ctaLink"
+                        data-aue-type="aem-link">
+                        
                         <em class="wg-icon wg-icon-calendar"></em>
-                        <span data-aue-prop="textContent_ctaText" data-aue-type="text">${ctaLabel}</span>
+
+                        <span data-aue-prop="ctaLabel" data-aue-type="text">${ctaLabel}</span>
                       </button>
                     </div>
-                  </a>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
       </div>
     </div>
+
   </div>
 </div>
 `;
