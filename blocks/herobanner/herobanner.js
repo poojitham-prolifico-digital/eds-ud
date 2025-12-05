@@ -43,7 +43,7 @@ export default function decorate(block) {
                   <div class="cta button a-button a-button--primary a-button--md a-link a-link--icon a-button--icon-left" data-aue-prop="ctaLink" data-aue-type="aem-link >
                     <div>
 	                    <button tabindex="0" class="btn   schedule-engine-integration-cta   " aria-label="Schedule now" id="button-bea9cd5877"  >
-                        <em class="wg-icon wg-icon-calendar"></em>${ctaLabel}${ctaLink}
+                        <em class="wg-icon wg-icon-calendar"></em>${ctaLabel}
                       </button>
                     </div>
                   </div>
