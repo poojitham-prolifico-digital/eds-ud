@@ -2,34 +2,19 @@
      data-block-name="herobanner"
      data-aue-component="herobanner"
      data-aue-type="component"
-     data-aue-model="herobanner"
-     data-aue-resource="urn:fcs:herobanner"
-
-     data-aue-prop="backgroundImage"
-     data-aue-shadow-prop="backgroundImage"
-
-     data-aue-prop="title"
-     data-aue-shadow-prop="title"
-
-     data-aue-prop="description"
-     data-aue-shadow-prop="description"
-
-     data-aue-prop="ctaLabel"
-     data-aue-shadow-prop="ctaLabel"
-
-     data-aue-prop="ctaLink"
-     data-aue-shadow-prop="ctaLink">
-
-  <!-- THE REST OF YOUR ORIGINAL HTML GOES INSIDE HERE -->
-  <!-- EXACT SAME HTML YOU ALREADY HAVE — do NOT change classes -->
+     data-aue-model="herobanner">
 
   <div class="container responsivegrid hero-banner container--default-width hero-banner--large-height hero-banner--content-left aem-GridColumn aem-GridColumn--default--12">
     <div class="hero-banner__main">
+
       <div class="hero-banner__img-container">
         <div class="image aem-GridColumn aemGridColumn--default-12">
-          <div class="cmp-image" data-aue-prop="backgroundImage" data-aue-type="aem-content">
+          <div class="cmp-image">
             <picture>
-              <img src="">
+              <!-- background image will be injected -->
+              <img data-aue-prop="backgroundImage"
+                   data-aue-type="aem-content"
+                   src="">
             </picture>
           </div>
         </div>
@@ -42,21 +27,28 @@
             <div class="banner-content banner-content--no-img">
               <div class="banner-content__main">
 
-                <div class="brand-heading" data-aue-prop="title" data-aue-type="richtext">
-                  title
+                <div class="brand-heading"
+                     data-aue-prop="title"
+                     data-aue-type="richtext">
+                  Title
                 </div>
 
-                <div class="banner-content__desc" data-aue-prop="description" data-aue-type="richtext">
-                  description
+                <div class="banner-content__desc"
+                     data-aue-prop="description"
+                     data-aue-type="richtext">
+                  Description
                 </div>
 
                 <div class="banner-content__cta">
                   <div class="cta button a-button a-button--primary a-button--md a-link a-link--icon a-button--icon-left">
 
-                    <a data-aue-prop="ctaLink" data-aue-type="aem-link" href="#">
-                      <button tabindex="0" class="btn schedule-engine-integration-cta" aria-label="">
+                    <a data-aue-prop="ctaLink"
+                       data-aue-type="aem-link"
+                       href="#">
+                      <button class="btn schedule-engine-integration-cta" aria-label="">
                         <em class="wg-icon wg-icon-calendar"></em>
-                        <span data-aue-prop="ctaLabel" data-aue-type="text">CTA Label</span>
+                        <span data-aue-prop="ctaLabel"
+                              data-aue-type="text">CTA Label</span>
                       </button>
                     </a>
 
