@@ -40,22 +40,25 @@ export default function decorate(block) {
 
               <div class="banner-content__desc" data-aue-prop="description" data-aue-type="richtext">${description}</div>
 
-              <div class="banner-content__cta">
-                <div class="cta button a-button a-button--primary a-button--md a-link a-link--icon a-button--icon-left">
-                    <div>
-                      <button tabindex="0"
-                        class="btn schedule-engine-integration-cta"
-                        aria-label="${ctaLabel}"
-                        data-aue-prop="ctaLink"
-                        data-aue-type="aem-link">
-                        
-                        <em class="wg-icon wg-icon-calendar"></em>
+<div class="banner-content__cta">
+  <div class="cta button a-button a-button--primary a-button--md a-link a-link--icon a-button--icon-left">
 
-                        <span data-aue-prop="ctaLabel" data-aue-type="text">${ctaLabel}</span>
-                      </button>
-                    </div>
-                </div>
-              </div>
+    <a data-aue-prop="ctaLink" data-aue-type="aem-link" href="${ctaLink}">
+      <div>
+        <button tabindex="0"
+          class="btn schedule-engine-integration-cta"
+          aria-label="${ctaLabel}">
+          
+          <em class="wg-icon wg-icon-calendar"></em>
+          <span data-aue-prop="ctaLabel" data-aue-type="text">${ctaLabel}</span>
+
+        </button>
+      </div>
+    </a>
+
+  </div>
+</div>
+
 
             </div>
           </div>
