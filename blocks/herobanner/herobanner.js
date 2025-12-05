@@ -10,7 +10,8 @@ export default function decorate(block) {
   const description = descEl?.innerHTML || '';
 
   const ctaLabel = ctaLabelEl?.innerText?.trim() || '';
-  const ctaLink = ctaLinkEl?.getAttribute('href') || '#';
+ const ctaLink = ctaLinkEl?.href || '#';
+
 
   block.innerHTML = `
   <div class="container responsivegrid hero-banner container--default-width hero-banner--large-height hero-banner--content-left aem-GridColumn aem-GridColumn--default--12">
