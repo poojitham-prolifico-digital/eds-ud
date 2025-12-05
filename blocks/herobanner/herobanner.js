@@ -10,7 +10,7 @@ export default function decorate(block) {
   const description = descEl?.innerHTML || '';
 
   const ctaLabel = ctaLabelEl?.innerText?.trim() || '';
- const ctaLink = ctaLinkEl?.href || '#';
+ const ctaLink = ctaLinkEl?.href || '';
 
 
   block.innerHTML = `
@@ -45,11 +45,11 @@ export default function decorate(block) {
 
 
 <div class="banner-content__cta">          
-                <div class="cta button a-button a-button--primary a-button--md a-link a-link--icon a-button--icon-left" data-aue-prop="ctaLink" data-aue-type="aem-link ${ctaLink}${ctaLabel}>
+                <div class="cta button a-button a-button--primary a-button--md a-link a-link--icon a-button--icon-left" data-aue-prop="ctaLink" data-aue-type="aem-link >${ctaLink}${ctaLabel}
 
 <div>
 
-	<button tabindex="0" class="btn   schedule-engine-integration-cta   " aria-label="Schedule now" id="button-bea9cd5877"  >
+	<button tabindex="0" class="btn   schedule-engine-integration-cta   " aria-label="Schedule now" id="button-bea9cd5877"  >${ctaLink}${ctaLabel}
 
 		<em class="wg-icon wg-icon-calendar"></em>${ctaLabel}${ctaLink}
 	</button>
