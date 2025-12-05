@@ -38,30 +38,16 @@
           "label": "Description"
         },
         {
-          "component": "collection",
-          "name": "buttons",
-          "label": "CTA Buttons",
-          "valueType": "array",
-          "models": ["ctaButton"]
-        }
-
-      ]
-    },
-
-    {
-      "id": "ctaButton",
-      "fields": [
-        {
           "component": "text",
-          "name": "label",
-          "label": "Button Label"
+          "name": "ctaLabel",
+          "label": "CTA Label"
         },
         {
-          "component": "aem-content",
-          "name": "link",
-          "label": "Button Link",
-          "valueType": "string"
+          "component": "aem-link",
+          "name": "ctaLink",
+          "label": "CTA Link"
         }
+
       ]
     }
 

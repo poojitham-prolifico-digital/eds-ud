@@ -112,12 +112,18 @@
   background-color: #fff;
 }
 .banner-content .brand-heading {
+ 
+  display: flex;
   line-height: 1.5rem;
 }
 .banner-content .brand-heading::before {
   content: "";
   background-color: #d86623;  /* updated line */
   margin-top: 0.1875rem;
+    height: 1.6875rem;
+  -webkit-box-flex: 0;
+  flex: 0 0 0.5rem;
+  margin-right: 0.625rem;
 }
 .banner-content__desc {
   color: #00539f;
@@ -168,6 +174,7 @@
   font-size: 30px;
   line-height: 1.25;
   color: black;
+   margin: 0;
 }
 .banner-content .brand-heading ::before{
   background-color: #d86623;
@@ -186,6 +193,7 @@
   font-size: 0.875rem;
   line-height:1.25rem ;
   color: #606261;
+  
 }
 .banner-content__desc p {
   margin-bottom: 0;
@@ -247,6 +255,3 @@
         padding-right: 3.75rem;
     }
 
-.banner-content .brand-heading::before {
-    background-color: #d86623 !important;
-}
