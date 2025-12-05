@@ -265,7 +265,13 @@
 
 
 
+.a-button .btn{
+      color: #fff;
 
+    background-image: linear-gradient(180deg, #004952, #006672);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
 
 .a-button--md {
   font-size: 0.875rem;
@@ -284,6 +290,12 @@
 .a-button--md.a-button--icon-right .wg-icon {
   margin-right: 0;
   margin-left: 0.6875rem;
+}
+.wg-icon {
+    font-size: 18px;
+}
+.wg-icon-calendar:before {
+    content: "\e953";
 }
 @media (min-width: 768px) {
   .a-button--md {
@@ -324,6 +336,12 @@
     margin-right: 0;
     margin-left: 1.125rem;
   }
+  .wg-icon {
+    font-size: 18px;
+}
+  .wg-icon-calendar:before {
+    content: "\e953";
+}
 }
 .a-button--lg {
   font-size: 0.875rem;
