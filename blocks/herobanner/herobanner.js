@@ -39,35 +39,15 @@ export default function decorate(block) {
                 <div class="brand-heading" data-aue-prop="title" data-aue-type="richtext">${title}</div>
 
                 <div class="banner-content__desc" data-aue-prop="description" data-aue-type="richtext">${description}</div>
-
-        
-
-
-
-<div class="banner-content__cta">          
-                <div class="cta button a-button a-button--primary a-button--md a-link a-link--icon a-button--icon-left" data-aue-prop="ctaLink" data-aue-type="aem-link >
-
-<div>
-
-	<button tabindex="0" class="btn   schedule-engine-integration-cta   " aria-label="Schedule now" id="button-bea9cd5877"  >
-
-		<em class="wg-icon wg-icon-calendar"></em>${ctaLabel}${ctaLink}
-	</button>
-</div>
-
-
-</div>
-
-              
-            </div>
-
-
-
-
-
-
-
-
+                <div class="banner-content__cta">          
+                  <div class="cta button a-button a-button--primary a-button--md a-link a-link--icon a-button--icon-left" data-aue-prop="ctaLink" data-aue-type="aem-link >
+                    <div>
+	                    <button tabindex="0" class="btn   schedule-engine-integration-cta   " aria-label="Schedule now" id="button-bea9cd5877"  >
+                        <em class="wg-icon wg-icon-calendar"></em>${ctaLabel}${ctaLink}
+                      </button>
+                    </div>
+                  </div>
+               </div>
               </div>
             </div>
 
