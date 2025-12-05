@@ -51,7 +51,7 @@ export default function decorate(block) {
 
 	<button tabindex="0" class="btn   schedule-engine-integration-cta   " aria-label="Schedule now" id="button-bea9cd5877"  >
 
-		<em class="wg-icon wg-icon-calendar">${ctaLabel}</em>${ctaLabel}Reserve Appointment
+		<em class="wg-icon wg-icon-calendar"></em>${ctaLabel}${ctaLink}
 	</button>
 </div>
 
